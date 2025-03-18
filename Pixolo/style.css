@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* hero styling starts */
+
+.hero
+{
+    background-image: url(/bg-image.jpg);
+    height: 100vh;
+    width: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.hero::before
+{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 70%;
+    display: block;
+    background-color: rgba(108,147,129,0.9)
+}
+.hero>*
+{
+    z-index: 3;
+    color: white;
+    font-family: "Montserrat", serif;
+
+}
+#tittle
+{
+    font-size: 80px;
+    max-width: 350px;
+}
+.about
+{
+    max-width: 400px;
+}
+#description
+{
+    margin-left: 20%;
+    flex-direction: column;
+}
+/* hero styling ends */
+
+/* form starts */
+
+#container
+{
+    
+  width: 30%;
+}
+#container>*
+{
+    font-family: "Montserrat", serif;
+
+}
+#form
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;    
+}
+.logo
+{
+    margin-bottom: 50px;
+}
+
+.greetings
+{
+    margin: 30px;
+    text-align: center;
+}
+.input
+{
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.email
+{
+    margin: 10px;
+    padding: 5px;
+}
+.password
+{
+    padding: 5px;
+    margin: 10px;
+}
+.button
+{
+    background-color: #6C9381;
+    color: white;
+    text-decoration: none;
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.forgetPassword
+{
+    margin: 20px;
+}
+.checkbox>input
+{
+    border-radius: 2px;
+}
+
+/* form ends */
+@media screen and (max-width:992px) {
+    .hero
+    {
+        width: 100%;
+    }
+    .main
+    {
+        flex-direction: column;
+    }
+    #container
+    {
+        width: 100%;
+    }
+    .hero::before
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .about
+    {
+        max-width:250px ;
+    }
+    
+}

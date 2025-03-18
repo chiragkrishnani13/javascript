@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex
+{
+    display: flex;
+    
+}
+.d-center
+{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.d-none
+{
+    display:none
+}
+.d-block
+{
+    flex-direction: column;
+}

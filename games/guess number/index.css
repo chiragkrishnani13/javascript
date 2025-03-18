@@ -1,0 +1,58 @@
+.d-flex
+{
+    display: flex;
+}
+#form
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+#center
+{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#center>div
+{
+    height: 15rem;
+    width: 15rem;
+    background-color: gray;
+    border-radius: 3rem;
+}
+#form>label
+{
+    margin-top: 20px;
+}
+.d-block
+{
+    display: block;
+}
+
+.d-none
+{
+    display: none;
+}
+#sumbit-button
+{
+    margin: 10px;
+}
+#foo
+{
+    justify-content: center;
+    align-items: center;
+}
+.bg-danger
+{
+    background-color: red;
+    color: white;
+}
+.bg-scuess
+{
+    background-color: green;
+    color: white;
+}
