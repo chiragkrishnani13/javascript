@@ -1,14 +1,14 @@
-const xhr = new XMLHttpRequest()
-const xhr2 = new XMLHttpRequest()
-const xhr3 = new XMLHttpRequest()
+// const xhr = new XMLHttpRequest()
+// const xhr2 = new XMLHttpRequest()
+// const xhr3 = new XMLHttpRequest()
 
-const xhr5 = new XMLHttpRequest()
-xhr5.addEventListener('loadend',()=>
-{
-    console.log(JSON.parse(xhr5.responseText));
-})
-xhr5.open('GET','https://restcountries.com/v3.1/name/India')
-xhr5.send()
+// const xhr5 = new XMLHttpRequest()
+// xhr5.addEventListener('loadend',()=>
+// {
+//     console.log(JSON.parse(xhr5.responseText));
+// })
+// xhr5.open('GET','https://restcountries.com/v3.1/name/India')
+// xhr5.send()
 
 // xhr3.addEventListener('loadend',()=>
 // {
@@ -43,3 +43,20 @@ xhr5.send()
 // xhr4.open('GET',"https://restcountries.com/v3.1/name/India")
 // xhr4.send()
 // console.log("-2");
+
+let promise = fetch("https://restcountries.com/v3.1/name/India")
+promise.then((response)=>
+{
+    return response.json()
+}).then((data)=>
+{
+    let cont = document.querySelector('.cont')
+    console.log(data);
+    cont.innerText = data[0]
+})
+
+let obj = 
+{
+    a:2,
+    b:3
+}

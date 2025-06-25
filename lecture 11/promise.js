@@ -19,9 +19,16 @@ console.log(cat1);
 //     })
 // })
 
-cat1.then((response)=>response.json())
-.then((data)=>fetch("https://restcountries.com/v3.1/name/India"))
-.then((response2)=>response2.json())
-.then((data)=>fetch("https://restcountries.com/v3.1/name/India"))
-.then((response3)=> response3.json())
-.then((data)=>console.log(data))
+cat1.then((response)=>
+{
+    return response.json()
+})
+.then((data)=>
+console.log(data))
+
+// cat1.then((response)=>response.json())
+// .then((data)=>fetch("https://restcountries.com/v3.1/name/India"))
+// .then((response2)=>response2.json())
+// .then((data)=>fetch("https://restcountries.com/v3.1/name/India"))
+// .then((response3)=> response3.json())
+// .then((data)=>console.log(data))

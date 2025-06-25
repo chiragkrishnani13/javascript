@@ -1,0 +1,31 @@
+.cont{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;    
+   
+    background-color: aqua;
+    box-shadow: 10px 5px 5px rgb(22, 135, 135);}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+div
+{
+    margin-left: 10px;
+}
+.btn
+{   flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    background-color: bisque;
+    border-radius: 5px;
+
+}
